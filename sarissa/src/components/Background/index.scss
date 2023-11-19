@@ -1,8 +1,9 @@
-.twinkling-background {
-    height: 100%;
-    width: 100%;
-    float: left;
-    top: 0;
-    padding: none;
-    position: fixed;
-  }
+.twinkling-backgrounds {
+  position: relative;
+  z-index: -1;
+}
+
+.video {
+  width: 100%;
+  height: auto;
+}
