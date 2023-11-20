@@ -71,18 +71,21 @@
         a.home-link {
             &:after {
                 content: 'HOME';
+                font-size: small;
             }
         }
 
         a.about-link {
             &:after {
                 content: 'ABOUT';
+                font-size: small;
             }
         }
 
         a.contact-link {
             &:after {
                 content: 'CONTACT';
+                font-size: small;
             }
         }
 
