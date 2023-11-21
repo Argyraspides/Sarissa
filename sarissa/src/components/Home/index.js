@@ -7,9 +7,11 @@ import CppIcon from '../../assets/images/cpp_logo.svg'
 import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
 import SDL2Icon from '../../assets/images/sdl2_logo.png'
 import UnderConstructionIcon from '../../assets/images/under_construction.svg'
+import Loader from 'react-loaders';
 
 const Home = () => {
   return (
+    <>    
     <div className="welcome">
       <h1>
         <span><Typewriter text="I'm Vinayak Joshi." delay={35} /></span>
@@ -42,8 +44,10 @@ const Home = () => {
           <div className="pong-text-link"></div>
         </NavLink>
       </div>
-
     </div>
+    <Loader type="pacman"/>
+    </>
+
   );
 };
 
