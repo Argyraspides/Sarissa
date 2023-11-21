@@ -14,7 +14,7 @@ const About = () =>
             <Background/>
             <Sidebar/>
             <div className='logo-container'>
-                <img src={Logo} className='logo'></img>
+                <img src={Logo} className='about-logo'></img>
                 <div className='desc-container'>
                     <h1 className='desc'>
                         <Typewriter text ='Deez nuts' delay={30}/>
