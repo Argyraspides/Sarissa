@@ -1,8 +1,8 @@
 import './index.scss'
 import Background from '../Background'
 import Sidebar from '../Sidebar'
-import Logo from '../../assets/images/initials_logo_purple_b1.png'
 import Typewriter from '../Home/Typewriter'
+import Logo from './Logo'
 
 
 
@@ -13,20 +13,17 @@ const About = () =>
         <div>
             <Background/>
             <Sidebar/>
-            <div className='logo-container'>
-                <img src={Logo} className='about-logo'></img>
-                <div className='desc-container'>
-                    <h1 className='desc'>
-                        <Typewriter text ='Deez nuts' delay={30}/>
-                        <h2>
-                        <Typewriter text={txt} delay={30}/>
-                        </h2>
-                    </h1>
-
-                </div>
+            <Logo/>
+            <div className='desc-container'>
+                <h1 className='desc'>
+                    <Typewriter text ='Ex Nihilo' delay={30}/>
+                    <h2>
+                    <Typewriter text={txt} delay={30}/>
+                    </h2>
+                </h1>
             </div>
-            
-        </div>)
+        </div>
+        )
         
 }
 
