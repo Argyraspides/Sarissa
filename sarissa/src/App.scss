@@ -1,0 +1,13 @@
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input,
+textarea {
+  font-family: 'Roboto', sans-serif;
+}

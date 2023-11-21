@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+  color-scheme: only light;
+}
+:root {
+  color-scheme: only light;
+}
+
+body {
+  margin: 0;
+  font: 300 11px 'Roboto', 'sans-serif';
+  color: #444;
+  background: #03001C;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

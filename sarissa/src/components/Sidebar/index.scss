@@ -1,0 +1,122 @@
+.nav-bar {
+    background: #080e2b;
+    width: 100px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    min-height: 500px;
+
+    .logo {
+        display: block;
+        flex-direction: column;
+        
+        img {
+            margin: auto;
+            margin-top: 30%; 
+            width: 75%;
+            display: block;
+        }
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+        position: absolute;
+        height: 90%;
+        width: 100%;
+
+        a {
+            font-size: 15px;
+            color: #FFFFFF;
+            display: block;
+            line-height: 51px;
+            height: 51px;
+            position: relative;
+            text-decoration: none;
+
+            i {
+                transition: all 0.3s ease-out;
+            }
+
+            &:hover {
+                color: #5B8FB9;
+
+                svg {
+                    opacity: 0;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
+            }
+
+            &:after {
+                content: '';
+                font-size: 9px;
+                letter-spacing: 2px;
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                opacity: 0;
+                transition: all 0.3s ease;
+               
+            }
+
+           
+        }
+
+        a.home-link {
+            top: 30%;
+            &:after {
+                content: 'HOME';
+                font-size: small;
+            }
+        }
+
+        a.about-link {
+            top: 30%;
+            &:after {
+                content: 'ABOUT';
+                font-size: small;
+            }
+        }
+
+        a.contact-link {
+            top: 30%;
+            &:after {
+                content: 'CONTACT';
+                font-size: small;
+            }
+        }
+
+    }
+
+    ul {
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        margin: 0;
+
+        li {
+            
+            a {
+                color: #FFFFFF;
+                padding: 7px 0;
+                display: block;
+                font-size: 17px;
+
+                &:hover {
+                    color: #5B8FB9;
+                }
+
+            }
+        }
+    }
+}
