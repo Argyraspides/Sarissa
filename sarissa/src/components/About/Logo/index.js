@@ -1,35 +1,16 @@
 import './index.scss'
 import LogoS from '../../../assets/images/initials_logo_purple_b1.png'
-import { useEffect, useRef } from 'react'
-import DrawSVGPlugin from 'gsap-trial/DrawSVGPlugin'
-import gsap from 'gsap-trial'
 
 const Logo = () => {
-    const bgRef = useRef();
-    const outlineLogoRef = useRef();
-    const solidLogoRef = useRef();
-
-    useEffect(() => {
-        gsap.registerPlugin(DrawSVGPlugin)
-
-        gsap.timeline().to(bgRef.current, {
-                duration: 1,
-                opacity: 1,
-            }).from(outlineLogoRef.current, {
-                drawSVG: 0,
-                duration: 20,
-            })
-    }, [])
 
     return (
-        <div className='logo-container' ref={bgRef}>
-            <img ref={solidLogoRef} className='solid-logo' src={LogoS} alt="S" />
+        <div className='logo-container'>
+            <img className='solid-logo' src={LogoS} alt="S" />
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
-                preserveAspectRatio="xMidYMid meet">
-
+                preserveAspectRatio="xMidYMid meet" className='svg-outer-container'>
                 <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-                    fill="#303644" stroke="none" className="svg-container">
+                    fill="#303644" className="svg-inner-container">
                     <path d="M3038 4943 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
                     <path d="M2488 4903 c17 -2 47 -2 65 0 17 2 3 4 -33 4 -36 0 -50 -2 -32 -4z" />
                     <path d="M2693 4893 c15 -2 37 -2 50 0 12 2 0 4 -28 4 -27 0 -38 -2 -22 -4z" />
@@ -55,7 +36,7 @@ const Logo = () => {
                     <path d="M1460 4635 c-14 -8 -20 -14 -15 -14 6 0 21 6 35 14 14 8 21 14 15 14 -5 0 -21 -6 -35 -14z"/>
                     <path d="M1570 4630 c-8 -5 -10 -10 -5 -10 6 0 17 5 25 10 8 5 11 10 5 10 -5 0 -17 -5 -25 -10z"/>
                     <path d="M1474 4584 c-18 -14 -18 -14 6 -3 31 14 36 19 24 19 -6 0 -19 -7 -30 -16z"/>
-                    <path ref={outlineLogoRef} d="M2405 4559 c-298 -15 -574 -88 -850 -225 -169 -83 -281 -153 -388
+                    <path d="M2405 4559 c-298 -15 -574 -88 -850 -225 -169 -83 -281 -153 -388
                             -241 -404 -335 -641 -777 -701 -1305 -42 -369 5 -722 144 -1073 60 -152 171
                             -336 301 -500 226 -284 523 -498 894 -643 237 -92 544 -140 822 -128 290 12
                             528 69 784 185 227 104 407 229 590 411 102 101 132 138 230 280 231 333 358

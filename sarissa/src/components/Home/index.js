@@ -5,7 +5,8 @@ import Typewriter from './Typewriter';
 import PhysicsEngineIcon from '../../assets/images/physics_engine_cover.png'
 import CppIcon from '../../assets/images/cpp_logo.svg'
 import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
-import WebGLIcon from '../../assets/images/web_gl_logo.svg'
+import SDL2Icon from '../../assets/images/sdl2_logo.png'
+import UnderConstructionIcon from '../../assets/images/under_construction.svg'
 
 const Home = () => {
   return (
@@ -28,13 +29,17 @@ const Home = () => {
         <span><Typewriter text='Check out my mini-projects right here!' delay={50} /></span>
       </h3>
 
-      <div>
+      <div className='project-links'>
         <NavLink exact={true} activeClassName="active" className="physics-engine-link" to="/pe">
           <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="fade-in-image"></img>
           <div className="physics-engine-link-text">2D Physics Engine</div>
           <img src={CppIcon} alt="C++ Logo" className="cpp-logo"></img>
           <img src={WebAssemblyIcon} alt="WebAssembly Logo" className="web-assembly-logo"></img>
-          <img src={WebGLIcon} alt="WebGL Logo" className="web-gl-logo"></img>
+          <img src={SDL2Icon} alt="WebGL Logo" className="sdl2-logo"></img>
+        </NavLink>
+        <NavLink exact={true} activeClassName="active" className="physics-engine-link" to="/pe">
+          <svg src={UnderConstructionIcon} alt="Under Construction" className="fade-in-image"></svg>
+          <div className="pong-text-link"></div>
         </NavLink>
       </div>
 
