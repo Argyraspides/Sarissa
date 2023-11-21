@@ -7,7 +7,6 @@ import './index.scss';
 const Layout = () => {
     return (
     <>
-        <Background/>
         <Sidebar/>
         <Home/>
     </>)

@@ -6,7 +6,6 @@ import './index.scss'
 const Contact = () => {
     return (
         <>
-        <Background/>
         <Sidebar/>
         <div className='container contact-page'>
             <div className = "text-zone">
