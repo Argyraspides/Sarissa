@@ -6,7 +6,7 @@ import PhysicsEngineIcon from '../../assets/images/physics_engine_cover_new.png'
 import CppIcon from '../../assets/images/cpp_logo.svg'
 import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
 import SDL2Icon from '../../assets/images/sdl2_logo.png'
-import ConstructionIcon from '../../assets/images/under_construction_2.png'
+import ConstructionIcon from '../../assets/images/under_construction_3_bw.png'
 
 const Home = () => {
   return (
@@ -26,7 +26,7 @@ const Home = () => {
         </h2>
 
         <h3>
-          <span><Typewriter text='                                                                                               Check out my projects below!' delay={75} />
+          <span><Typewriter text='                                                                                                                                                                                                                                                                             Check out my projects below!' delay={25} />
           </span>
         </h3>
 
@@ -41,11 +41,11 @@ const Home = () => {
             </div>
           </NavLink>
           <NavLink exact={true} activeClassName="active" className="project-link" to="/under-construction">
-            <img src={ConstructionIcon} alt="construction icon" className="project-image"></img>
+            <img src={ConstructionIcon} alt="construction icon" className="project-image-dev" ></img>
             <div className="project-image-text">Fluid Simulator <br /> (In development!) </div>
           </NavLink>
           <NavLink exact={true} activeClassName="active" className="project-link" to="/under-construction">
-            <img src={ConstructionIcon} alt="construction icon" className="project-image"></img>
+            <img src={ConstructionIcon} alt="construction icon" className="project-image-dev"></img>
             <div className="project-image-text">Particle Physics Simulator<br /> (In development!) </div>
           </NavLink>
 
