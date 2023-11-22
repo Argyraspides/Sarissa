@@ -13,23 +13,8 @@ const Home = () => {
     <>
       <div className="welcome">
         <h1>
-          <span><Typewriter text="I'm Vinayak Joshi." delay={35} /></span>
-          <br></br>
-          <span><Typewriter text="Welcome to my ship." delay={35} /></span>
+          <span><Typewriter text="Welcome to my ship." delay={75} /></span>
         </h1>
-        <h2>
-          <span><Typewriter text='Passionate, tenacious, and always willing to put "we" over "me". 
-                                I am currently a final year software engineering student at the 
-                                University of Auckland with a love of all things software, having 
-                                a special interest in modelling the real world. ' delay={25} />
-          </span>
-        </h2>
-
-        <h3>
-          <span><Typewriter text='                                                                                                                                                                                                                                                                             Check out my projects below!' delay={25} />
-          </span>
-        </h3>
-
         <div className='project-links'>
           <NavLink exact={true} activeClassName="active" className="project-link" to="/pe">
             <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image"></img>
