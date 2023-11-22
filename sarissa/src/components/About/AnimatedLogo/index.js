@@ -4,13 +4,13 @@ import LogoS from '../../../assets/images/initials_logo_purple_b1.png'
 const Logo = () => {
 
     return (
-        <div className='logo-container'>
-            <img className='solid-logo' src={LogoS} alt="S" />
+        <div className='about-logo-container'>
+            <img className='about-solid-logo' src={LogoS} alt="S" />
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
-                preserveAspectRatio="xMidYMid meet" className='svg-outer-container'>
+                preserveAspectRatio="xMidYMid meet" className='about-svg-outer-container'>
                 <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
-                    fill="#303644" className="svg-inner-container">
+                    fill="#303644" className="about-svg-inner-container">
                     <path d="M3038 4943 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
                     <path d="M2488 4903 c17 -2 47 -2 65 0 17 2 3 4 -33 4 -36 0 -50 -2 -32 -4z" />
                     <path d="M2693 4893 c15 -2 37 -2 50 0 12 2 0 4 -28 4 -27 0 -38 -2 -22 -4z" />

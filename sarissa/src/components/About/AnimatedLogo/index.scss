@@ -1,4 +1,4 @@
-.logo-container {
+.about-logo-container {
     z-index: 0;
     width: 500px;
     height: 500px;
@@ -9,7 +9,7 @@
     left: auto;
     margin: auto;
 
-    .svg-outer-container {
+    .about-svg-outer-container {
         position: relative;
         width: 100%;
         height: auto;
@@ -17,7 +17,7 @@
         align-items: center;
     }
 
-    .svg-outer-container .svg-inner-container path {
+    .about-svg-outer-container .about-svg-inner-container path {
         stroke: 10;
         stroke-width: 20;
         stroke: #FFFFFF;
@@ -37,7 +37,7 @@
       
     }
 
-    .solid-logo {
+    .about-solid-logo {
         position: absolute;
         top: auto;
         right: auto;
@@ -56,9 +56,5 @@
             opacity: 1; /* Set opacity to 1 at the end of the animation */
         }
     }
-
-    
-
-    
 }
 

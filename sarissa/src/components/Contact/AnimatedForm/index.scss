@@ -1,0 +1,101 @@
+.contact-form {
+    width: 35%;
+    opacity: 0;
+    animation: fadeInAndGlow 2s ease-in-out forwards;
+    margin-left: 10%;
+    position: absolute;
+    margin-top: 30%;
+    background: transparent;
+
+    @keyframes fadeInAndGlow {
+        0% {
+            opacity: 0;
+            box-shadow: 0 0 300px rgba(2, 110, 199, 0.7);
+        }
+        30% {
+            opacity: 0.5;
+            box-shadow: 0 0 300px rgba(2, 110, 199, 0.836);
+        }
+        40% {
+            box-shadow: 0 0 300px rgba(2, 110, 199, 0.877);
+            opacity: 0.75;
+        }
+        100% {
+            opacity: 1;
+            box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+        }
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            overflow: hidden;
+            display: block;
+            position: relative;
+            clear: both;
+            box-sizing: border-box;
+            border-radius: 2px;
+
+        }
+
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    input[type='text'],
+    input[type='email'] {
+        width: 100%;
+        border: 0;
+        background: #134772a4;
+        height: 50px;
+        font-size: 16px;
+        color: #FFFFFF;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        width: 100%;
+        border: 0;
+        background: #134772a4;
+        height: 50px;
+        font-size: 16px;
+        padding: 20px;
+        color: #FFFFFF;
+        min-height: 150px;
+        box-sizing: border-box;
+        resize: none;
+    }
+
+    .flat-button {
+        color: rgb(255, 255, 255);
+        background: #134772a4;
+        box-sizing: border-box;
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+        font: 11px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        float: left;
+    }
+
+}
+
+.contact-form.fade-in {
+    opacity: 1;
+}

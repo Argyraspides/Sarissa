@@ -1,7 +1,7 @@
 
 import './index.scss'
 import { NavLink } from 'react-router-dom';
-import Typewriter from './Typewriter';
+import Typewriter from '../../assets/effects/Typewriter';
 import PhysicsEngineIcon from '../../assets/images/physics_engine_cover.png'
 import CppIcon from '../../assets/images/cpp_logo.svg'
 import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
