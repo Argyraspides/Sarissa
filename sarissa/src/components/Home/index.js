@@ -7,7 +7,6 @@ import CppIcon from '../../assets/images/cpp_logo.svg'
 import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
 import SDL2Icon from '../../assets/images/sdl2_logo.png'
 import UnderConstructionIcon from '../../assets/images/under_construction.svg'
-import Loader from 'react-loaders';
 
 const Home = () => {
   return (
@@ -45,7 +44,6 @@ const Home = () => {
         </NavLink>
       </div>
     </div>
-    <Loader type="pacman"/>
     </>
 
   );
