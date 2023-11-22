@@ -42,8 +42,11 @@ const Home = () => {
           </NavLink>
           <NavLink exact={true} activeClassName="active" className="project-link" to="/under-construction">
             <img src={ConstructionIcon} alt="construction icon" className="project-image"></img>
-            <div className="project-image-text">Fluid Simulator <br /> (Under Construction!) </div>
-            <div className="pong-text-link"></div>
+            <div className="project-image-text">Fluid Simulator <br /> (In development!) </div>
+          </NavLink>
+          <NavLink exact={true} activeClassName="active" className="project-link" to="/under-construction">
+            <img src={ConstructionIcon} alt="construction icon" className="project-image"></img>
+            <div className="project-image-text">Particle Physics Simulator<br /> (In development!) </div>
           </NavLink>
 
         </div>
