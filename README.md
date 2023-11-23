@@ -7,7 +7,7 @@
   
   
 <p>This is the source code for my developer portfolio website, currently in development. It uses the React library for the front-end, and will
-soon include a much improved port of my physics engine (which you may check out in my repo, named "Chiron") through Emscriptem and WebAssembly. 
+soon include a much improved port of my physics engine (which you may check out in my repo, named "Chiron") through Emscripten and WebAssembly. 
 A fully-fledged fluid dynamics and particle simulator will soon be added — with many more mini-projects that I find interesting to come :)
 
 <br/>
