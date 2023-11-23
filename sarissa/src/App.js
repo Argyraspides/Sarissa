@@ -1,6 +1,6 @@
 import './App.scss';
 import {Route, Routes} from 'react-router-dom'
-import Projects from './components/Layout';
+import Projects from './components/Projects';
 import About from './components/About'
 import Contact from './components/Contact';
 import PE from './components/PE'

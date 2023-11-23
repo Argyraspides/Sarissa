@@ -7,18 +7,29 @@ import CppIcon from '../../assets/images/cpp_logo.svg'
 import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
 import SDL2Icon from '../../assets/images/sdl2_logo.png'
 import ConstructionIcon from '../../assets/images/under_construction_3_bw.png'
+import Sidebar from '../Sidebar';
 
 const Projects = () => {
+  let spc = `                                        `
+
+  let txt = `All of these you can run directly in your browser.` + spc + `
+   Some may not be complete and you may check their progress 
+   and other complete non-web projects on my GitHub page at the bottom of the sidebar.`
   return (
     <>
+    <Sidebar/>
       <div className="welcome">
         <h1>
           <span><Typewriter text="Welcome to my ship." delay={75} /></span>
+          <br/>
         </h1>
+        <h2>
+        <span><Typewriter text={spc+spc+spc+spc+txt} delay={30} /></span>
+        </h2>
         <div className='project-links'>
-          <NavLink exact={true} activeClassName="active" className="project-link" to="/pe">
-            <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image"></img>
-            <div className="project-image-text">2D Physics Engine</div>
+          <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/pe">
+            <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image-dev"></img>
+            <div className="project-image-text">2D Physics Engine <br /> (In development) </div>
             <div className='library-logos'>
               <img src={CppIcon} alt="C++ Logo" className="library-logo"></img>
               <img src={WebAssemblyIcon} alt="WebAssembly Logo" className="library-logo"></img>
