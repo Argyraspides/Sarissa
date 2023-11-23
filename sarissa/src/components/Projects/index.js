@@ -8,7 +8,7 @@ import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
 import SDL2Icon from '../../assets/images/sdl2_logo.png'
 import ConstructionIcon from '../../assets/images/under_construction_3_bw.png'
 
-const Home = () => {
+const Projects = () => {
   return (
     <>
       <div className="welcome">
@@ -25,13 +25,13 @@ const Home = () => {
               <img src={SDL2Icon} alt="WebGL Logo" className="library-logo"></img>
             </div>
           </NavLink>
-          <NavLink exact={true} activeClassName="active" className="project-link" to="/under-construction">
+          <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
             <img src={ConstructionIcon} alt="construction icon" className="project-image-dev" ></img>
-            <div className="project-image-text">Fluid Simulator <br /> (In development!) </div>
+            <div className="project-image-text">Fluid Simulator <br /> (In development) </div>
           </NavLink>
-          <NavLink exact={true} activeClassName="active" className="project-link" to="/under-construction">
+          <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
             <img src={ConstructionIcon} alt="construction icon" className="project-image-dev"></img>
-            <div className="project-image-text">Particle Physics Simulator<br /> (In development!) </div>
+            <div className="project-image-text">Particle Physics Simulator<br /> (In development) </div>
           </NavLink>
 
         </div>
@@ -42,4 +42,4 @@ const Home = () => {
 };
 
 
-export default Home;
+export default Projects;

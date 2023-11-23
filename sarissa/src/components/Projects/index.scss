@@ -22,7 +22,8 @@
     margin-left: 15%;
     margin-top: 20%;
 
-    .project-link {
+
+    .project-link, .project-link-in-development {
         position: relative;
         width: 250px;
         text-decoration: none;
@@ -49,6 +50,7 @@
             top: 5%;
             margin-bottom: 40px;
             font-size: medium;
+            cursor: default;
         }
 
         .library-logos {
@@ -85,6 +87,8 @@
 
 
     }
+
+
 }
 
 
