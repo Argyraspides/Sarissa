@@ -1,0 +1,20 @@
+.contact-page {
+    .text-zone {
+        position: absolute;
+        left: 10%;
+        top: 25%;
+        width: 35%;
+        display: table-cell;
+        max-height: 90%;
+        color: #FFFFFF;
+        font-size: medium;
+
+        h1 {
+            font-weight: normal;
+        }
+        p {
+            width: 500px;
+        }
+    }
+}
+

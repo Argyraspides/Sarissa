@@ -1,16 +1,13 @@
 import Sidebar from '../Sidebar';
-import Home from '../Home'
-import Background from '../Background';
-
+import ProjectList from '../Projects'
 import './index.scss';
 
-const Layout = () => {
+const Projects = () => {
     return (
     <>
-        <Background/>
         <Sidebar/>
-        <Home/>
+        <ProjectList/>
     </>)
 }
 
-export default Layout;
+export default Projects;

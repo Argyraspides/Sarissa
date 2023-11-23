@@ -1,0 +1,102 @@
+.welcome {
+    z-index: 4;
+    display: flex;
+    align-items: flex-start;
+
+    h1 {
+        position: absolute;
+        top: 5%;
+        left: 10%;
+        color: #ffffff;
+        font-weight: bold;
+        width: 270px;
+    }
+
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-left: 15%;
+    margin-top: 20%;
+
+
+    .project-link, .project-link-in-development {
+        position: relative;
+        width: 250px;
+        text-decoration: none;
+        opacity: 0;
+        animation: fadeInRight 0.5s ease-out forwards;
+
+        .project-image {
+            width: 250px;
+            position: relative;
+            border-radius: 150px;
+        }
+        // project image that is under development
+        .project-image-dev {
+            width: 250px;
+            position: relative;
+            cursor: default;
+            border-radius: 150px;
+        }
+
+        .project-image-text {
+            position: relative;
+            color: #ffffff;
+            text-align: center;
+            top: 5%;
+            margin-bottom: 40px;
+            font-size: medium;
+            cursor: default;
+        }
+
+        .library-logos {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 250px;
+            margin-top: 10%;
+        }
+
+        .library-logo {
+            width: auto;
+            height: 50px;
+        }
+
+        &:nth-child(1) {
+            animation-delay: 1.75s;
+        }
+
+        &:nth-child(2) {
+            animation-delay: 2.25s;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 2.75s;
+        }
+
+        @keyframes fadeInRight {
+            to {
+              opacity: 1;
+              transform: translateX(0); /* Move to the original position */
+            }
+        }
+
+
+    }
+
+
+}
+
+
+.project-image {
+    opacity: 0.7;
+    transition: opacity 0.25s ease;
+}
+
+.project-image:hover {
+    opacity: 1;
+}
