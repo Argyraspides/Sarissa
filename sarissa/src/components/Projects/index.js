@@ -7,10 +7,12 @@ import CppIcon from '../../assets/images/cpp_logo.svg'
 import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
 import SDL2Icon from '../../assets/images/sdl2_logo.png'
 import ConstructionIcon from '../../assets/images/under_construction_3_bw.png'
+import Sidebar from '../Sidebar';
 
 const Projects = () => {
   return (
     <>
+    <Sidebar/>
       <div className="welcome">
         <h1>
           <span><Typewriter text="Welcome to my ship." delay={75} /></span>
