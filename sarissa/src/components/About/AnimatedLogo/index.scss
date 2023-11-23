@@ -1,14 +1,6 @@
 .about-logo-container {
-    z-index: 0;
-    width: 500px;
-    height: 500px;
-    position: absolute;
-    top: 0;
-    right: 15%;
-    bottom: 0;
-    left: auto;
-    margin: auto;
-
+    margin-left: auto;
+    margin-right: auto;
     .about-svg-outer-container {
         position: relative;
         width: 100%;
@@ -45,10 +37,9 @@
         left: 0;
         margin: auto;
         width: 100%;
-        z-index: 2;
         opacity: 0;
         animation: fadeIn 5s forwards;
-        animation-delay: 29s;
+        animation-delay: 12s;
     }
 
     @keyframes fadeIn {

@@ -1,10 +1,10 @@
 import './index.scss'
 import LogoS from '../../../assets/images/initials_logo_purple_b1.png'
 
-const Logo = () => {
+const Logo = ({className}) => {
 
     return (
-        <div className='about-logo-container'>
+        <div className={className}>
             <img className='about-solid-logo' src={LogoS} alt="S" />
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
