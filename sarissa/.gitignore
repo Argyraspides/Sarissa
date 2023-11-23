@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-/src/components/Contact/AnimatedForm/index.js
+src/components/Contact/AnimatedForm/index.js
 # production
 /build
 
