@@ -11,7 +11,7 @@ const AnimatedForm = () => {
         e.preventDefault()
 
         emailjs.sendForm(
-            'SERVICE_ID_TST',
+            'SERVICE_ID_TST1',
             'TEMPLATE_ID',
             refForm.current,
             'PUBLIC_KEY'
