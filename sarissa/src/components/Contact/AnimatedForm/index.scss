@@ -1,10 +1,10 @@
 .contact-form {
     width: 35%;
+    margin-left: 10%;
+    margin-top: 25%;
     opacity: 0;
     animation: fadeInAndGlow 2s ease-in-out forwards;
-    margin-left: 10%;
     position: absolute;
-    margin-top: 30%;
     background: transparent;
 
     @keyframes fadeInAndGlow {
@@ -13,12 +13,12 @@
             box-shadow: 0 0 300px rgba(2, 110, 199, 0.7);
         }
         30% {
-            opacity: 0.5;
+            opacity: 0.3;
             box-shadow: 0 0 300px rgba(2, 110, 199, 0.836);
         }
         40% {
             box-shadow: 0 0 300px rgba(2, 110, 199, 0.877);
-            opacity: 0.75;
+            opacity: 0.4;
         }
         100% {
             opacity: 1;
