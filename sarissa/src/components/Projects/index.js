@@ -10,13 +10,22 @@ import ConstructionIcon from '../../assets/images/under_construction_3_bw.png'
 import Sidebar from '../Sidebar';
 
 const Projects = () => {
+
+  let txt = `All of these you can run directly in your browser.
+   Some may not be complete, and you may check their progress 
+   and other complete projects on my GitHub page at the bottom of the sidebar.`
+   let spc = `                                        `
   return (
     <>
     <Sidebar/>
       <div className="welcome">
         <h1>
           <span><Typewriter text="Welcome to my ship." delay={75} /></span>
+          <br/>
         </h1>
+        <h2>
+        <span><Typewriter text={spc+spc+spc+spc+txt} delay={30} /></span>
+        </h2>
         <div className='project-links'>
           <NavLink exact={true} activeClassName="active" className="project-link" to="/pe">
             <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image"></img>
