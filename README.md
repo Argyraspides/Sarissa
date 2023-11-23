@@ -12,7 +12,7 @@ A fully-fledged fluid dynamics and particle simulator will soon be added — wit
 
 <br/>
 <br/>
-If you want to check out the site for yourself, first ensure that you have Node.js installed. You may download it here: https://nodejs.org/en <br/>
+Currently, the site isn't hosted on the internet. If you want to check it out for yourself, first ensure that you have Node.js installed. You may download it here: https://nodejs.org/en <br/><br/>
 You can then run the following commands to get up and running (ensure that you are in the "sarissa" directory):
 <br/>
 <p>
