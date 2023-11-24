@@ -18,7 +18,7 @@ A fully-fledged fluid dynamics and particle simulator will soon be added — wit
 <p>
   
 
-You can view the progress of the site live by visiting it [here](sarissa.vercel.app). If you want to build and run the site from source locally, 
+You can view the progress of the site live by visiting it [here](https://sarissa.vercel.app). If you want to build and run the site from source locally, 
 first ensure that you have Node.js installed. You may download it here: [Node.js](https://nodejs.org/en) <br/><br/>
 You can then run the following commands to get up and running (ensure that you are in the "sarissa" directory):
 
