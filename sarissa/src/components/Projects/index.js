@@ -19,14 +19,11 @@ const Projects = () => {
     <>
     <Sidebar/>
       <div className="welcome">
-        <h1>
-          <span><Typewriter text="Welcome to my ship." delay={75} /></span>
+        <h1><span><Typewriter text="Welcome to my ship." delay={75} /></span></h1>
           <br/>
-        </h1>
-        <h2>
-        <span><Typewriter text={spc+spc+spc+spc+txt} delay={30} /></span>
-        </h2>
-        <div className='project-links'>
+        <h2><span><Typewriter text={spc+spc+spc+spc+txt} delay={30} /></span></h2>
+      </div>
+      <div className='project-links'>
           <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
             <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image-dev"></img>
             <div className="project-image-text">2D Physics Engine <br /> (In development) </div>
@@ -46,7 +43,6 @@ const Projects = () => {
           </NavLink>
 
         </div>
-      </div>
     </>
 
   );

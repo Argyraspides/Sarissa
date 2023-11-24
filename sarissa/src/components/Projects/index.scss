@@ -1,12 +1,9 @@
 .welcome {
-    z-index: 4;
-    display: flex;
-    align-items: flex-start;
-
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 5%;
     h1 {
         position: absolute;
-        top: 5%;
-        left: 10%;
         color: #ffffff;
         font-weight: bold;
         width: 50%;
@@ -14,45 +11,49 @@
 
     h2 {
         position: absolute;
-        top: 10%;
-        left: 10%;
         color: #ffffff;
         font-weight: normal;
         width: 50%;
+        margin-top: 5%;
     }
 }
 
 .project-links {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 50%;
+    text-align: center;
     margin-left: 15%;
+    width: 100%;
     margin-top: 20%;
-
-
+    
     .project-link, .project-link-in-development {
         position: relative;
         width: 250px;
+        margin-right: 50px;
         text-decoration: none;
         opacity: 0;
         animation: fadeInRight 0.5s ease-out forwards;
+        justify-content: center;
+        align-items: center;
 
         .project-image {
             width: 250px;
-            position: relative;
-            border-radius: 150px;
+            border-radius: 50%;
         }
         // project image that is under development
         .project-image-dev {
             width: 250px;
-            position: relative;
             cursor: default;
-            border-radius: 150px;
+            border-radius: 50%;
+            margin-right: 50px;
+        }
+
+        @media (max-width: 1280px) {
+            .project-image-dev {
+                width: 150px;
+            } 
         }
 
         .project-image-text {
-            position: relative;
             color: #ffffff;
             text-align: center;
             top: 5%;
