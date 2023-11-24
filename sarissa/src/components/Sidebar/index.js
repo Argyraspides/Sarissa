@@ -4,21 +4,14 @@ import InitialsLogo from '../../assets/images/initials_logo_purple_b1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCode, faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 const Sidebar = () => {
 
-
-    const [isSidebarOpen, setSidebarOpen] = useState(false);
-
-  const handleToggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen);
-  };
-
+   
     return (
-        <div className={`nav-bar ${isSidebarOpen ? 'open' : ''}`}>
-            <div className='hamburger-menu' onClick={handleToggleSidebar}>
-        &#9776; {/* Hamburger icon */}
-            </div>
+        <>
+        <div className="nav-bar">
+           
         <Link className='logo' to='/'>
             <img src={InitialsLogo} alt="logo"/>
         </Link>
@@ -49,6 +42,7 @@ const Sidebar = () => {
             
         </ul>
     </div>
+    </>
     )
 }
 
