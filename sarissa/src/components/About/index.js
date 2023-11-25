@@ -2,8 +2,22 @@ import './index.scss'
 import Sidebar from '../Sidebar'
 import Typewriter from '../../assets/effects/Typewriter'
 import Logo from './AnimatedLogo'
+import { useState, useEffect } from 'react'
 
 const About = () => {
+
+    const [visitedBefore, setVisitedBefore] = useState(false);
+
+    useEffect(() => {
+        const hasVisitedBefore = sessionStorage.getItem('visitedAboutRoute');
+
+        if (hasVisitedBefore) {
+            setVisitedBefore(true);
+        } else {
+            sessionStorage.setItem('visitedAboutRoute', true);
+        }
+
+    }, []);
 
     const spc = `                           `;
     const sentences = [
@@ -13,30 +27,42 @@ const About = () => {
         `Drive, tenacity, and always seeking greater not only for myself, but for all, is my purpose. `,
         `There is nothing more noble than to endure the inevitabilities of life for the service of mankind.`,
         `Here you will find my works, and a means to contact me for any inquiries.`
-    ];              
+    ];
 
-    let txt = spc + spc;
+    let welcomeTextBody = spc + spc;
     sentences.forEach(
         sentence => {
-            txt += sentence;
-            txt += spc;
+            welcomeTextBody += sentence;
+            welcomeTextBody += spc;
         }
     )
-    
+
+    let welcomeText;
+    let finalWelcomeTextBody;
+    if (!visitedBefore) {
+        welcomeText = <Typewriter text='Welcome.' delay={25} />
+        finalWelcomeTextBody = <Typewriter text={welcomeTextBody} delay={25} />
+    }
+    else {
+        welcomeText = 'Welcome'
+        finalWelcomeTextBody = welcomeTextBody;
+    }
+
     return (
         <>
             <Sidebar />
-            <Logo className='about-logo-container'/>
+            <Logo className='about-logo-container' />
             <div className='desc-container'>
                 <h1>
-                    <Typewriter text='Welcome.' delay={25} />
+                    {welcomeText}
                     <h2>
-                        <Typewriter text={txt} delay={25} />
+                        {finalWelcomeTextBody}
                     </h2>
                 </h1>
             </div>
         </>
     )
+
 
 }
 
