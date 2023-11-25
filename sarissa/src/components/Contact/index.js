@@ -30,33 +30,33 @@ const Contact = () => {
     let contactTitleText;
     let finalContactTextBody;
 
-    if(!visitedBefore) {
+    if (!visitedBefore) {
         contactTitleText = <Typewriter text={"Contact Me"} delay={30} />
-        finalContactTextBody= <Typewriter text={spc + contactTextBody} delay={30} />
+        finalContactTextBody = <Typewriter text={spc + contactTextBody} delay={30} />
     } else {
         contactTitleText = "Contact Me"
-        finalContactTextBody= contactTextBody
+        finalContactTextBody = contactTextBody
     }
 
     return (
-        <>   
-        <Sidebar />
-        <div className='contact-page-container'>
-            <div className='contact-page'>
-                <div className="text-zone">
-                    <h1>
-                        {contactTitleText}
-                    </h1>
-                    <p>
-                        {finalContactTextBody}
-                    </p>
+        <div>
+            <Sidebar />
+            <div className='contact-page-container'>
+                <div className='contact-page'>
+                    <div className="text-zone">
+                        <h1>
+                            {contactTitleText}
+                        </h1>
+                        <p>
+                            {finalContactTextBody}
+                        </p>
 
+                    </div>
+                    <AnimatedForm className='contact-form-container' />
                 </div>
-                <AnimatedForm className='contact-form-container' />
+                <Logo className='contact-page-logo-container' />
             </div>
-                <Logo className='contact-page-logo-container'/>
         </div>
-        </>
 
     )
 }
