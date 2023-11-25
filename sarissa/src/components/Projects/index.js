@@ -53,7 +53,7 @@ const Projects = () => {
         <br/>
         <br/>
         <h2 className="projects-welcome-text">{finalWelcomeTextBody}</h2>
-      </div>
+      </div> 
       <div className='project-links'>
         <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
           <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image-dev"></img>

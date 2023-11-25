@@ -15,25 +15,24 @@
         color: #ffffff;
         font-weight: normal;
         width: 50%;
-        margin-top: 5%;
+        margin-top: 2.5%;
     }
 }
 
 .project-links {
     display: flex;
-    text-align: center;
-    justify-content: center;
     align-items: center;
-    margin-left: 15%;
-
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-top: -7.5%;
+    
     .project-link,
     .project-link-in-development {
-        margin-right: 50px;
-        text-decoration: none;
 
+        text-decoration: none;
         opacity: 0;
         animation: fadeInRight 0.5s ease-out forwards;
-        display: inline;
         width: 100%;
         align-items: center;
         justify-content: center;
@@ -111,10 +110,11 @@
 
     .project-links {
         display: flex;
-        text-align: center;
-        justify-content: center;
         align-items: center;
-        margin-left: 15%;
+        justify-content: center;
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 0%;
 
         .project-link,
         .project-link-in-development {
@@ -196,7 +196,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        height: 25%;
+        min-height: 25vh;
 
         .projects-welcome-title {
             color: #ffffff;
@@ -216,12 +216,15 @@
     }
 
     .project-links {
-        display: none;
-        //display: grid;
+
+        position: absolute;
+        display: grid;
         text-align: center;
         justify-content: center;
         align-items: center;
-        margin-left: 15%;
+        width: 100%;
+        margin-left: 25px;
+        top: 20%;
 
         .project-link,
         .project-link-in-development {
@@ -237,13 +240,13 @@
             justify-content: center;
 
             .project-image {
-                width: 150px;
+                width: 200px;
                 border-radius: 50%;
             }
 
             // project image that is under development
             .project-image-dev {
-                width: 150px;
+                width: 200px;
                 cursor: default;
                 border-radius: 50%;
             }
@@ -251,7 +254,7 @@
             .project-image-text {
                 color: #ffffff;
                 display: block;
-                font-size: medium;
+                font-size: small;
                 margin-top: 2.5%;
                 cursor: default;
             }
