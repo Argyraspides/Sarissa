@@ -5,11 +5,11 @@ const Background = () => {
 
 
   return (
-    <section id='twinkling-backgrounds'>
+    <div className='background-container'>
         <video autoPlay loop muted>
         <source src={TwinklingBackground} type='video/mp4' />
         </video>  
-    </section>
+    </div>
   );
 };
 
