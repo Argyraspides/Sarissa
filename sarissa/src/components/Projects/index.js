@@ -37,10 +37,10 @@ const Projects = () => {
   let finalWelcomeTextBody
 
   if (!visitedBefore) {
-    welcomeTextTitle = <Typewriter text="Welcome to my ship." delay={75} />
+    welcomeTextTitle = <Typewriter text="Welcome to my ship" delay={75} />
       finalWelcomeTextBody = <Typewriter text={spc + spc + spc + spc + welcomeTextBody} delay={30} />
   } else {
-    welcomeTextTitle = "Welcome to my ship."
+    welcomeTextTitle = "Welcome to my ship"
       finalWelcomeTextBody = spc + spc + spc + spc + welcomeTextBody
   }
 
