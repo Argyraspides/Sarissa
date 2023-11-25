@@ -63,15 +63,17 @@
 
     .contact-page-container {
         position: absolute;
-        width: 100%;
+        display: flexbox;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
 
 
         .contact-page-logo-container {
-            position: fixed;
-            width: 250px;
-            height: 250px;
+            width: 225px;
+            height: 225px;
             top: 65%;
-            left: 22.5%;
+            right: 45%;
         }
 
         .contact-page {
@@ -100,8 +102,6 @@
                     font-size: small;
                     width: 100%;
                 }
-            }
-            .contact-form-container {
             }
         }
     }
