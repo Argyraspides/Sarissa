@@ -40,7 +40,7 @@ const About = () => {
     let welcomeText;
     let finalWelcomeTextBody;
     if (!visitedBefore) {
-        welcomeText = <Typewriter text='Welcome.' delay={25} />
+        welcomeText = <Typewriter text='Welcome' delay={25} />
         finalWelcomeTextBody = <Typewriter text={welcomeTextBody} delay={25} />
     }
     else {
