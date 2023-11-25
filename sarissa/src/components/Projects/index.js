@@ -56,7 +56,7 @@ const Projects = () => {
         <br/>
         <h2 className="projects-welcome-text">{finalWelcomeTextBody}</h2>
       </div> 
-      <div className='project-links'>
+      <div className={`project-links ${visitedBefore ? 'disable' : ''}`}>
         <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
           <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image-dev"></img>
           <div className="project-image-text">2D Physics Engine <br /> (In development) </div>
