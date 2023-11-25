@@ -3,12 +3,41 @@ import AnimatedForm from './AnimatedForm'
 import Logo from './AnimatedLogo'
 import Sidebar from '../Sidebar'
 import './index.scss'
+import { useState, useEffect } from 'react'
 
 const Contact = () => {
+
+    const [visitedBefore, setVisitedBefore] = useState(false);
+
+    useEffect(() => {
+        const hasVisitedBefore = sessionStorage.getItem('visitedAboutRoute');
+
+        if (hasVisitedBefore) {
+            setVisitedBefore(true);
+        } else {
+            sessionStorage.setItem('visitedAboutRoute', true);
+        }
+
+    }, []);
+
+
     const spc = `                      `
-    const txt = spc +
+    const contactTextBody = spc +
         `You may contact me via email, which I check regularly.`
         + spc + `Use the form below, or email me directly at joshivinayak441@gmail.com.` + spc + `Whichever is more convenient for you.`
+
+
+    let contactTitleText;
+    let finalContactTextBody;
+
+    if(!visitedBefore) {
+        contactTitleText = <Typewriter text={"Contact Me"} delay={30} />
+        finalContactTextBody= <Typewriter text={spc + contactTextBody} delay={30} />
+    } else {
+        contactTitleText = "Contact Me"
+        finalContactTextBody= contactTextBody
+    }
+
     return (
         <>   
         <Sidebar />
@@ -16,10 +45,10 @@ const Contact = () => {
             <div className='contact-page'>
                 <div className="text-zone">
                     <h1>
-                        <Typewriter text={"Contact Me"} delay={30} />
+                        {contactTitleText}
                     </h1>
                     <p>
-                        <Typewriter text={spc + txt} delay={30} />
+                        {finalContactTextBody}
                     </p>
 
                 </div>
