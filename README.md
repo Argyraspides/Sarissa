@@ -9,20 +9,18 @@
 <img src="https://github.com/Argyraspides/Sarissa/assets/95353936/6e619ad7-d610-431d-9c0f-76ac519d074b" width="auto" height="100"><br/><br/><br/></img>  
   
   
-<p>This is the source code for my developer portfolio website, currently in development. It uses the React library for the front-end, and will
+<p>This is the source code for my developer portfolio website. It uses the React library for the front-end, and will
 soon include a much improved port of my physics engine (which you may check out in my repo, named "Chiron") through Emscripten and WebAssembly. 
-A fully-fledged fluid dynamics and particle simulator will soon be added — with many more mini-projects that I find interesting to come :)
+A fully-fledged fluid dynamics and particle simulator will also be added in the future — with many more mini-projects that I find interesting to come :)
 
 <br/>
 <br/>
 <p>
   
 
-You can view the progress of the site live by visiting it [here](https://sarissa.vercel.app). If you want to build and run the site from source locally, 
+You can visit the site [here](https://sarissa.vercel.app). If you want to build and run the site from source locally, 
 first ensure that you have Node.js installed. You may download it here: [Node.js](https://nodejs.org/en) <br/><br/>
 You can then run the following commands to get up and running (ensure that you are in the "sarissa" directory):
-
-
 
 ```npm install # Installs dependencies specified in sarissa/package.json```
 <br/>
