@@ -17,12 +17,12 @@ const Projects = () => {
   const [visitedBefore, setVisitedBefore] = useState(false);
 
   useEffect(() => {
-    const hasVisitedBefore = sessionStorage.getItem('visitedAboutRoute');
+    const hasVisitedBefore = sessionStorage.getItem('visitedProjectsRoute');
 
     if (hasVisitedBefore) {
       setVisitedBefore(true);
     } else {
-      sessionStorage.setItem('visitedAboutRoute', true);
+      sessionStorage.setItem('visitedProjectsRoute', true);
     }
 
   }, []);

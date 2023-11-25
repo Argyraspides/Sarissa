@@ -10,12 +10,12 @@ const Contact = () => {
     const [visitedBefore, setVisitedBefore] = useState(false);
 
     useEffect(() => {
-        const hasVisitedBefore = sessionStorage.getItem('visitedAboutRoute');
+        const hasVisitedBefore = sessionStorage.getItem('visitedContactRoute');
 
         if (hasVisitedBefore) {
             setVisitedBefore(true);
         } else {
-            sessionStorage.setItem('visitedAboutRoute', true);
+            sessionStorage.setItem('visitedContactRoute', true);
         }
 
     }, []);
