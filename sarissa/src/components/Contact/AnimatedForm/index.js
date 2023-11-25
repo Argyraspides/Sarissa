@@ -40,7 +40,7 @@ const AnimatedForm = ({ className }) => {
                             <input placeholder="Subject" type="text" name="subject" required />
                         </li>
                         <li>
-                            <textarea placeholder="Message" name="Message" required></textarea>
+                            <textarea placeholder="Message" name="message" required></textarea>
                         </li>
                         <li>
                             <input type="submit" className='flat-button' value="send"></input>
