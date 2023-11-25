@@ -1,6 +1,7 @@
 import Typewriter from '../../assets/effects/Typewriter'
 import AnimatedForm from './AnimatedForm'
 import Logo from './AnimatedLogo'
+import Sidebar from '../Sidebar'
 import './index.scss'
 
 const Contact = () => {
@@ -9,6 +10,8 @@ const Contact = () => {
         `You may contact me via email, which I check regularly.`
         + spc + `Use the form below, or email me directly at joshivinayak441@gmail.com.` + spc + `Whichever is more convenient for you.`
     return (
+        <>   
+        <Sidebar />
         <div className='contact-page-container'>
             <div className='contact-page'>
                 <div className="text-zone">
@@ -21,10 +24,11 @@ const Contact = () => {
 
                 </div>
                 <AnimatedForm className='contact-form-container' />
-
             </div>
-            <Logo className='contact-page-logo-container'/>
+                <Logo className='contact-page-logo-container'/>
         </div>
+        </>
+
     )
 }
 
