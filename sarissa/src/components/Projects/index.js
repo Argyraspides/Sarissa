@@ -49,9 +49,10 @@ const Projects = () => {
     <>
       <Sidebar />
       <div className="welcome">
-        <h1>{welcomeTextTitle}</h1>
-        <br />
-        <h2>{finalWelcomeTextBody}</h2>
+        <h1 className="projects-welcome-title">{welcomeTextTitle}</h1> 
+        <br/>
+        <br/>
+        <h2 className="projects-welcome-text">{finalWelcomeTextBody}</h2>
       </div>
       <div className='project-links'>
         <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
@@ -66,10 +67,20 @@ const Projects = () => {
         <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
           <img src={ConstructionIcon} alt="construction icon" className="project-image-dev" ></img>
           <div className="project-image-text">Fluid Simulator <br /> (In development) </div>
+          <div className='library-logos'>
+            <img src={CppIcon} alt="C++ Logo" className="library-logo"></img>
+            <img src={WebAssemblyIcon} alt="WebAssembly Logo" className="library-logo"></img>
+            <img src={SDL2Icon} alt="WebGL Logo" className="library-logo"></img>
+          </div>
         </NavLink>
         <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
           <img src={ConstructionIcon} alt="construction icon" className="project-image-dev"></img>
           <div className="project-image-text">Particle Physics Simulator<br /> (In development) </div>
+          <div className='library-logos'>
+            <img src={CppIcon} alt="C++ Logo" className="library-logo"></img>
+            <img src={WebAssemblyIcon} alt="WebAssembly Logo" className="library-logo"></img>
+            <img src={SDL2Icon} alt="WebGL Logo" className="library-logo"></img>
+          </div>
         </NavLink>
 
       </div>
