@@ -1,14 +1,12 @@
 import './index.scss'
 import LogoS from '../../../assets/images/radio_telescope_b.png'
 
-const Logo = () => {
-
+const Logo = ({className}) => {
     return (
-        <div className='contact-logo-container'>
-            <img className='contact-solid-logo' src={LogoS} alt="S" />
+        <div className={className}>
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
                 width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
-                preserveAspectRatio="xMidYMid meet" className='contact-svg-outer-container'>
+                preserveAspectRatio="xMidYMid meet" className="animated-logo-svg">
 
                 <g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
                     fill="#000000" stroke="none" className="contact-svg-inner-container">
@@ -732,8 +730,10 @@ l0 135 73 0 c39 0 78 -4 86 -9 11 -7 12 -34 7 -140 -8 -147 -12 -140 69 -121
                     <path d="M1385 340 c3 -5 13 -10 21 -10 8 0 12 5 9 10 -3 6 -13 10 -21 10 -8
 0 -12 -4 -9 -10z"/>
                     <path d="M1958 143 c7 -3 16 -2 19 1 4 3 -2 6 -13 5 -11 0 -14 -3 -6 -6z" />
+               
                 </g>
             </svg>
+            <img className='contact-solid-logo' src={LogoS} alt="S" />
         </div>
     )
 }

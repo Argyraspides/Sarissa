@@ -1,13 +1,12 @@
 import { useRef } from 'react'
 import './index.scss'
 import emailjs from "@emailjs/browser"
-const AnimatedForm = () => {
+const AnimatedForm = ({ className }) => {
+    console.log(className)
 
     const refForm = useRef()
 
-
-    const sendEmail = (e) =>
-    {
+    const sendEmail = (e) => {
         e.preventDefault()
 
         emailjs.sendForm(
@@ -15,7 +14,7 @@ const AnimatedForm = () => {
             'template_j34t4mf',
             refForm.current,
             'RiYEg9RxIZ3E_xr3y'
-        ).then (
+        ).then(
             () => {
                 alert('Message sent!')
                 window.location.reload(false)
@@ -27,26 +26,28 @@ const AnimatedForm = () => {
     }
 
     return (
-        <div className='contact-form'>
-            <form ref={refForm} onSubmit={sendEmail}>
-            <ul>
-                <li className='half'>
-                    <input type="text" name="name" placeholder="Name" required />
-                </li>
-                <li className='half'>
-                    <input type="email" name="email" placeholder="Email" required />
-                </li>
-                <li>
-                    <input placeholder="Subject" type="text" name="subject" required />
-                </li>
-                <li>
-                    <textarea placeholder="Message" name="Message" required></textarea>
-                </li>
-                <li>
-                    <input type="submit" className='flat-button' value="send"></input>
-                </li>
-            </ul>
-            </form>
+        <div className={className}>
+            <div className='contact-form'>
+                <form ref={refForm} onSubmit={sendEmail}>
+                    <ul>
+                        <li className='half'>
+                            <input type="text" name="name" placeholder="Name" required />
+                        </li>
+                        <li className='half'>
+                            <input type="email" name="email" placeholder="Email" required />
+                        </li>
+                        <li>
+                            <input placeholder="Subject" type="text" name="subject" required />
+                        </li>
+                        <li>
+                            <textarea placeholder="Message" name="Message" required></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" className='flat-button' value="send"></input>
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </div>
     )
 }

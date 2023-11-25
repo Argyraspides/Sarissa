@@ -2,14 +2,11 @@ import './index.scss'
 import {Link, NavLink} from 'react-router-dom'
 import InitialsLogo from '../../assets/images/initials_logo_purple_b1.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCode, faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons'
+import {faCode, faEnvelope, faHome} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import React, { useEffect } from 'react';
 const Sidebar = () => {
-
    
     return (
-        <>
         <div className="nav-bar">
            
         <Link className='logo' to='/'>
@@ -42,7 +39,6 @@ const Sidebar = () => {
             
         </ul>
     </div>
-    </>
     )
 }
 
