@@ -46,8 +46,10 @@ const Projects = () => {
 
 
   return (
-    <>
+    
+    <div className="projects-container">
       <Sidebar />
+
       <div className="welcome">
         <h1 className="projects-welcome-title">{welcomeTextTitle}</h1> 
         <br/>
@@ -84,7 +86,7 @@ const Projects = () => {
         </NavLink>
 
       </div>
-    </>
+    </div>
 
   );
 };
