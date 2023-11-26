@@ -1,6 +1,7 @@
 .about-logo-container {
     margin-left: auto;
     margin-right: auto;
+
     .about-svg-outer-container {
         position: relative;
         width: 100%;
@@ -16,18 +17,10 @@
         fill: transparent;
         stroke-dasharray: 25000;
         stroke-dashoffset: 25000;
-        animation: animate 20s forwards;
+        animation: animate 15s forwards;
     }
 
-    @keyframes animate
-    {
-        to {
-            stroke-dashoffset: 0;
-            fill: #303644;
-            stroke-opacity: 0;
-        }
-      
-    }
+    
 
     .about-solid-logo {
         position: absolute;
@@ -38,14 +31,24 @@
         margin: auto;
         width: 100%;
         opacity: 0;
-        animation: fadeIn 5s forwards;
-        animation-delay: 12s;
+        animation: fadeIn 3s forwards;
+        animation-delay: 10s;
     }
 
     @keyframes fadeIn {
         to {
-            opacity: 1; /* Set opacity to 1 at the end of the animation */
+            opacity: 1;
         }
+    }
+
+    @keyframes animate
+    {
+        to {
+            stroke-dashoffset: 0;
+            fill: #303644;
+            stroke-opacity: 0;
+        }
+      
     }
 }
 
