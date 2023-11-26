@@ -1,22 +1,20 @@
-
-
 .nav-bar {
     background: #080e2b;
     width: 100px;
     height: 100%;
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 1000;
     min-height: 500px;
     transition: width 0.3s ease, left 0.3s ease;
 
     .logo {
         display: block;
         flex-direction: column;
-        
+
         img {
             margin: auto;
-            margin-top: 30%; 
+            margin-top: 30%;
             width: 75%;
             display: block;
         }
@@ -65,14 +63,15 @@
                 text-align: center;
                 opacity: 0;
                 transition: all 0.3s ease;
-               
+
             }
 
-           
+
         }
 
         a.home-link {
             top: 30%;
+
             &:after {
                 content: 'HOME';
                 font-size: small;
@@ -81,6 +80,7 @@
 
         a.about-link {
             top: 30%;
+
             &:after {
                 content: 'PROJECTS';
                 font-size: small;
@@ -89,6 +89,7 @@
 
         a.contact-link {
             top: 30%;
+
             &:after {
                 content: 'CONTACT';
                 font-size: small;
@@ -108,7 +109,7 @@
         margin: 0;
 
         li {
-            
+
             a {
                 color: #FFFFFF;
                 padding: 7px 0;
@@ -127,7 +128,7 @@
 .toggle-btn {
     cursor: pointer;
     position: fixed;
-    z-index: 4;
+    z-index: 1000;
     display: none;
 
     .toggle-icon {
@@ -136,6 +137,7 @@
         height: auto;
         color: #FFFFFF;
     }
+
     .close-icon {
         position: absolute;
         width: 25px;
@@ -146,11 +148,6 @@
 
 .dark-overlay.collapsed {
     display: none;
-    position: absolute;
-    background-color: #0000009d;
-    z-index: 10;
-    position: fixed;
-  
 }
 
 @media (max-width: 768px) {
@@ -166,33 +163,39 @@
         .toggle-icon {
             display: block;
         }
+
         .close-icon {
             display: none;
         }
 
-        transition: width 0.3s ease, left 0.3s ease;
+        transition: width 0.3s ease,
+        left 0.3s ease;
     }
 
     .toggle-btn.collapsed {
         left: 120px;
+
         .toggle-icon {
             display: none;
         }
+
         .close-icon {
             display: block;
         }
-        transition: width 0.3s ease, left 0.3s ease;
+
+        transition: width 0.3s ease,
+        left 0.3s ease;
     }
 
 
     .dark-overlay {
-        position: absolute;
-        opacity: 1;
-        background-color: #0000009d;
-        z-index: 3;  
-        width: 100%;
-        // temp solution.
-        min-height: 1000vh;
+        position: fixed;
         top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+        overflow: auto;
     }
 }
