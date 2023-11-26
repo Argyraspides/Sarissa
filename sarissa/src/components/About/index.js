@@ -38,7 +38,7 @@ const About = () => {
 
     let welcomeText;
     let finalWelcomeTextBody;
-    if (false) {
+    if (!visitedBefore) {
         welcomeText = <Typewriter text='Welcome' delay={25} />
         finalWelcomeTextBody = <Typewriter text={welcomeTextBody} delay={25} />
     }
