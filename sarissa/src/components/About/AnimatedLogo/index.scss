@@ -17,7 +17,7 @@
         fill: transparent;
         stroke-dasharray: 25000;
         stroke-dashoffset: 25000;
-        animation: animate 20s forwards;
+        animation: animate 15s forwards;
     }
 
     
@@ -32,7 +32,7 @@
         width: 100%;
         opacity: 0;
         animation: fadeIn 1s forwards;
-        animation-delay: 20s;
+        animation-delay: 10s;
     }
 
     @keyframes fadeIn {
