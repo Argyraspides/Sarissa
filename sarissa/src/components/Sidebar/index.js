@@ -16,7 +16,7 @@ const Sidebar = () => {
     };
 
     return (
-        <div>
+        <div className='sidebar-container'>
             <div className={`dark-overlay ${isCollapsed ? 'collapsed' : ''}`}>
             </div>
             <div className={`toggle-btn ${isCollapsed ? '' : 'collapsed'}`} onClick={handleToggleSidebar}>

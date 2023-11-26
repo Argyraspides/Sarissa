@@ -38,24 +38,22 @@ const Projects = () => {
 
   if (!visitedBefore) {
     welcomeTextTitle = <Typewriter text="Welcome to my ship" delay={75} />
-      finalWelcomeTextBody = <Typewriter text={spc + spc + spc + spc + welcomeTextBody} delay={30} />
+    finalWelcomeTextBody = <Typewriter text={spc + spc + spc + spc + welcomeTextBody} delay={30} />
   } else {
     welcomeTextTitle = "Welcome to my ship"
-      finalWelcomeTextBody = spc + spc + spc + spc + welcomeTextBody
+    finalWelcomeTextBody = spc + spc + spc + spc + welcomeTextBody
   }
 
 
   return (
-    
+
     <div className="projects-container">
       <Sidebar />
-
       <div className="welcome">
-        <h1 className="projects-welcome-title">{welcomeTextTitle}</h1> 
-        <br/>
-        <br/>
-        <h2 className="projects-welcome-text">{finalWelcomeTextBody}</h2>
-      </div> 
+        <h1 className="projects-welcome-title">{welcomeTextTitle}
+          <h2 className="projects-welcome-text">{finalWelcomeTextBody}</h2>
+        </h1>
+      </div>
       <div className={`project-links ${visitedBefore ? 'disable' : ''}`}>
         <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
           <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image-dev"></img>
