@@ -10,6 +10,10 @@
         .contact-page-logo-container {
             width: 30%;
             right: 10%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .contact-page {

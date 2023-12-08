@@ -39,7 +39,7 @@ const Contact = () => {
     }
 
     return (
-        <div>
+        <>
             <Sidebar />
             <div className='contact-page-container'>
                 <div className='contact-page'>
@@ -56,7 +56,7 @@ const Contact = () => {
                 </div>
                 <Logo className='contact-page-logo-container' />
             </div>
-        </div>
+        </>
 
     )
 }
