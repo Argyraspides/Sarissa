@@ -21,10 +21,13 @@ const About = () => {
 
     const spc = `                           `;
     const sentences = [
-        `There is nothing more noble than to endure the inevitabilities of life for the service of mankind.`,
-        `Tenacity, teamwork, and tactfulness drive me forward.`,
-        `As I push through my final year of software engineering at the University of Auckland, so too do I push my amibition for the software world.`,
+        //`There is nothing more noble than to endure the inevitabilities of life for the service of mankind.`,
+        //`Tenacity, teamwork, and tactfulness drive me forward.`,
+        //`As I push through my final year of software engineering at the University of Auckland, so too do I push my amibition for the software world.`,
+        //`My name is Vinayak Joshi.`,
+        //`Here you will find my works, and a means to contact me for any inquiries.`
         `My name is Vinayak Joshi.`,
+        `As I push through my final year of software engineering at the University of Auckland, so too do I push my amibition for the software world.`,
         `Here you will find my works, and a means to contact me for any inquiries.`
     ];
 
@@ -50,7 +53,6 @@ const About = () => {
     return (
         <>
             <Sidebar />
-
             <div className='about-container'>
                 <div className='desc-container'>
                     <h1>
