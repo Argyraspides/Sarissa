@@ -55,7 +55,7 @@ const Projects = () => {
         </h1>
       </div>
       <div className={`project-links ${visitedBefore ? 'disable' : ''}`}>
-        <NavLink exact={true} activeClassName="active" className="project-link-in-development" to="/projects">
+        <NavLink exact={true} activeClassName="active" className="project-link" to="/projects">
           <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image-dev"></img>
           <div className="project-image-text">2D Physics Engine <br /> (In development) </div>
           <div className='library-logos'>

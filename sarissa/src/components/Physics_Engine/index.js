@@ -1,6 +1,6 @@
 
 const PhysicsEngine = () => {
-    window.location.href = "/Telos.html";
+    window.location.href = "/Telos/Telos.html";
     return <></>;
 }
 
