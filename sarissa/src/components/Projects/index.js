@@ -3,6 +3,7 @@ import './index.scss'
 import { NavLink } from 'react-router-dom';
 import Typewriter from '../../assets/effects/Typewriter';
 import PhysicsEngineIcon from '../../assets/images/physics_engine_cover_new_bw.png'
+import PhysicsEngineIconC from '../../assets/images/physics_engine_cover_new.png'
 import CppIcon from '../../assets/images/cpp_logo.svg'
 import WebAssemblyIcon from '../../assets/images/web_assembly_Logo.svg'
 import SDL2Icon from '../../assets/images/sdl2_logo.png'
@@ -55,9 +56,9 @@ const Projects = () => {
         </h1>
       </div>
       <div className={`project-links ${visitedBefore ? 'disable' : ''}`}>
-        <NavLink exact={true} activeClassName="active" className="project-link" to="/projects">
-          <img src={PhysicsEngineIcon} alt="Physics Engine Icon" className="project-image-dev"></img>
-          <div className="project-image-text">2D Physics Engine <br /> (In development) </div>
+        <NavLink exact={true} activeClassName="active" className="project-link" to="/telos">
+          <img src={PhysicsEngineIconC} alt="Physics Engine Icon" className="project-image"></img>
+          <div className="project-image-text">2D Physics Engine <br /> (Alpha release) </div>
           <div className='library-logos'>
             <img src={CppIcon} alt="C++ Logo" className="library-logo"></img>
             <img src={WebAssemblyIcon} alt="WebAssembly Logo" className="library-logo"></img>
