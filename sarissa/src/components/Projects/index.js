@@ -58,7 +58,7 @@ const Projects = () => {
       <div className={`project-links ${visitedBefore ? 'disable' : ''}`}>
         <NavLink exact={true} activeClassName="active" className="project-link" to="/telos">
           <img src={PhysicsEngineIconC} alt="Physics Engine Icon" className="project-image"></img>
-          <div className="project-image-text">2D Physics Engine <br /> (Alpha release) </div>
+          <div className="project-image-text">2D Physics Engine <br /> (Beta release) </div>
           <div className='library-logos'>
             <img src={CppIcon} alt="C++ Logo" className="library-logo"></img>
             <img src={WebAssemblyIcon} alt="WebAssembly Logo" className="library-logo"></img>
