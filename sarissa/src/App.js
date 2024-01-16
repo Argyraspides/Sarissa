@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 //import PE from './components/PE'
 import Background from './components/Background';
 import PhysicsEngine from './components/Physics_Engine';
+import FluidSimulator from './components/Fluid_Simulator'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Route path = "/projects" element={<Projects/>} />
       <Route path = "/contact" element={<Contact/>} />
       <Route path="/telos" element={<PhysicsEngine />} />
+      <Route path="/rheos" element={<FluidSimulator />} />
     </Routes>
    </> 
   )
