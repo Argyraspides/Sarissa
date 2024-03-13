@@ -25,7 +25,7 @@ const Contact = () => {
     const contactTextBody = spc +
         `You may contact me via email, which I check regularly.`
         + spc + `Use the form below, or email me directly at joshivinayak441@gmail.com.`
-
+//
 
     let contactTitleText;
     let finalContactTextBody;
