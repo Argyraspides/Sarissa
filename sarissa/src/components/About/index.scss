@@ -20,6 +20,11 @@
         max-width: 100%;
     }
 
+
+    p {
+        font-size: 14px; 
+    }
+
     @keyframes cursor {
         50% {
             border-color: transparent
@@ -57,7 +62,9 @@
                 color: #ffffff;
                 max-width: 100%;
             }
-        
+            p {
+                font-size: 14px; 
+            }
             @keyframes cursor {
                 50% {
                     border-color: transparent
@@ -99,7 +106,7 @@
             top: -15%;
             h2 {
                 font-weight: normal;
-                font-size: small;
+                font-size: medium;
                 color: #ffffff;
                 text-align: center;
             }
@@ -110,7 +117,9 @@
                 color: #ffffff;
                 text-align: center;
             }
-
+            p {
+                font-size: 13px; 
+            }
         }
     }
 

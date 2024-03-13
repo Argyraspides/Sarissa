@@ -21,14 +21,7 @@ const About = () => {
 
     const spc = `                           `;
     const sentences = [
-        //`There is nothing more noble than to endure the inevitabilities of life for the service of mankind.`,
-        //`Tenacity, teamwork, and tactfulness drive me forward.`,
-        //`As I push through my final year of software engineering at the University of Auckland, so too do I push my amibition for the software world.`,
-        //`My name is Vinayak Joshi.`,
-        //`Here you will find my works, and a means to contact me for any inquiries.`
-        `My name is Vinayak Joshi.`,
-        `As I push through my final year of software engineering at the University of Auckland, so too do I push my amibition for the software world.`,
-        `Here you will find my works, and a means to contact me for any inquiries.`
+        `I always have loved, and always will love the software world. Check out my projects on the sidebar, or contact me for any inquiries.`
     ];
 
     let welcomeTextBody = spc + spc;
@@ -40,13 +33,16 @@ const About = () => {
     )
 
     let welcomeText;
+    let welcomeSubText;
     let finalWelcomeTextBody;
     if (!visitedBefore) {
-        welcomeText = <Typewriter text='Welcome' delay={25} />
+        welcomeText = <Typewriter text='Vinayak Joshi' delay={25} />
+        welcomeSubText = <Typewriter text='Final Year Software Engineering Student at UoA' delay={25} />
         finalWelcomeTextBody = <Typewriter text={welcomeTextBody} delay={25} />
     }
     else {
-        welcomeText = 'Welcome'
+        welcomeText = 'Vinayak Joshi'
+        welcomeSubText = 'Final Year Software Engineering Student at UoA'
         finalWelcomeTextBody = welcomeTextBody;
     }
 
@@ -58,8 +54,12 @@ const About = () => {
                     <h1>
                         {welcomeText}
                         <h2>
-                            {finalWelcomeTextBody} 
+                            {welcomeSubText} 
                         </h2>
+                        <br></br>
+                        <p>
+                            {welcomeTextBody}
+                        </p>
                     </h1>
                 </div>
                 <Logo className='about-logo-container' />
