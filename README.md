@@ -10,7 +10,7 @@
   
   
 This is the source code for my developer portfolio website. It uses the React library for the front-end, and will
-soon include a much improved port of my physics engine which you can check out [here](https://github.com/Argyraspides/Chiron), through Emscripten and WebAssembly. 
+soon include a much improved port of my physics engine which you can check out [here](https://github.com/Argyraspides/Telos), through Emscripten and WebAssembly. 
 A fully-fledged fluid dynamics and particle simulator will also be added in the future — with many more mini-projects that I find interesting to come :)
 
   
